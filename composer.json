@@ -1,0 +1,38 @@
+{
+  "name": "indibeast/email-template-generator",
+  "description": "Email template generator",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Indika Gunasekara",
+      "email": "indigun89@gmail.com"
+    }
+  ],
+  "keywords": [
+    "email",
+    "template",
+    "generator"
+  ],
+  "require": {
+    "php": ">=5.5.0",
+    "jenssegers/blade": "^1.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.0",
+    "satooshi/php-coveralls": "~0.6"
+
+  },
+  "autoload": {
+    "psr-4": {
+      "EmailTemplate\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "EmailTemplate\\Test\\": "tests/src/"
+    }
+  },
+  "branch-alias": {
+    "dev-master": "0.0.x-dev"
+  }
+}
