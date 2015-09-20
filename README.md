@@ -33,5 +33,5 @@ composer require indibeast/email-template-generator
  ```
 ## License
 
-The MIT License (MIT). Please see [License File](https://github.com/indibeast/email-template/blob/master/LICENSE) for more information.
+The MIT License (MIT). Please see [License File](https://github.com/indibeast/email-template-generator/blob/master/LICENSE) for more information.
 
