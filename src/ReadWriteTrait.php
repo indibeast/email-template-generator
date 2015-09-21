@@ -53,7 +53,7 @@ trait ReadWriteTrait {
         }
 
         if ($path) {
-            return $this->dirpath.$this->filename.$this->ext;
+            return $this->dirpath.DIRECTORY_SEPARATOR.$this->filename.$this->ext;
         }
         return $this->filename.$this->ext;
     }
