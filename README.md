@@ -15,21 +15,21 @@ Install using composer:
 composer require indibeast/email-template-generator
 ```
 
-## Example FileWriter
+## FileWriter
 ```php
  $filewriter = new Writer(__DIR__ . '/../files/');//Set the directory
  $content = 'Hi {{$name}}';//Blade content
  $filewriter->setFilename('sample')->setContent($content)->save();//This will create sample.blade.php file in the given location.
  ```
-## Example FileReader
+## FileReader
  ```php
  $reader = new Reader(__DIR__ . '/../files/');//Set the directory where blade files located.
- $reader->setFilename('sample')->readeFile();//This will display 'Hi {{$name}}'.
+ $reader->setFilename('sample')->readFile();//This will display 'Hi {{$name}}'.
  ```
-## Example BladeRender
+## BladeRender
  ```php
- $reader = new BladeRender(__DIR__ . '/../files',__DIR__ . '/../cache');//Set views nad cache folder for blade files.
- $reader->render('sample',['name' => 'Mahendra']);//This will display 'Hi Mahendra'.
+ $bladeRender = new BladeRender(__DIR__ . '/../files',__DIR__ . '/../cache');//Set views nad cache folder for blade files.
+ $bladeRender->render('sample',['name' => 'Mahendra']);//This will display 'Hi Mahendra'.
  ```
 ## License
 

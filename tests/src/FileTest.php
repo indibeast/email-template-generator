@@ -22,7 +22,7 @@ class FileTest extends \PHPUnit_Framework_TestCase {
     {
         $reader = new Reader(__DIR__ . '/../files/');
 
-        $this->assertEquals('Hi {{$name}}',$reader->setFilename('sample')->readeFile());
+        $this->assertEquals('Hi {{$name}}',$reader->setFilename('sample')->readFile());
     }
 
     public function test_blade_render()

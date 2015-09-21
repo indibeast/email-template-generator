@@ -12,7 +12,7 @@ class Reader {
      * @return string
      * @throws FileException
      */
-    public function readeFile()
+    public function readFile()
     {
         return $this->openFile();
     }
